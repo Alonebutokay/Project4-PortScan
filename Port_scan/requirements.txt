@@ -1,0 +1,11 @@
+# No external packages required – all are part of Python Standard Library
+# These are just for reference/documentation
+
+argparse
+socket
+threading
+datetime
+# Requirements for Port Scanner (CLI)
+# No external packages required – all standard library
+python>=3.7
+
