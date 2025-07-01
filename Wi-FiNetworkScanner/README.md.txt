@@ -29,7 +29,7 @@ Requirements
 General
 Python 3.x
 
-For Linux (linux_wifi_scanner.py)
+##For Linux (linux_wifi_scanner.py)
 wireless-tools package: This provides the iwlist command-line utility.
 
 Installation: On Debian/Ubuntu-based systems, install with sudo apt-get install wireless-tools. For other distributions, use your respective package manager (e.g., sudo dnf install wireless-tools for Fedora, sudo pacman -S wireless_tools for Arch Linux).
@@ -45,7 +45,7 @@ comtypes: A dependency for pywifi, used for COM interoperability.
 
 Installation: These can be installed via pip:
 
-Bash
+##Bash
 
 pip install -r requirements.txt
 Permissions: It's recommended to run your command prompt or PowerShell as an Administrator for pywifi to have full access.
@@ -53,7 +53,7 @@ Permissions: It's recommended to run your command prompt or PowerShell as an Adm
 Installation
 Clone the repository:
 
-Bash
+##Bash
 
 git clone https://github.com/YOUR_USERNAME/wifi-scanner.git
 cd wifi-scanner
@@ -62,32 +62,28 @@ cd wifi-scanner
 Install Python dependencies (for Windows users):
 If you plan to use the Windows scanner, install the required Python libraries:
 
-Bash
+##Bash
 
 pip install -r requirements.txt
 For Linux users, Python dependencies are not typically required, as the script relies on system utilities.
 
 Usage
-On Linux
+##On Linux
 To scan for networks using the Linux script:
 
-Bash
+##Bash
 
 sudo python3 linux_wifi_scanner.py
 Important: You might need to change the wireless interface name (wlan0) in the linux_wifi_scanner.py script to match your system's actual interface (e.g., wlp2s0, wlo1). You can find your interface name by running ip a or ifconfig in your terminal.
 
 Ensure your wireless adapter is enabled and up (sudo ip link set YOUR_INTERFACE_NAME up).
 
-On Windows
+##On Windows
 To scan for networks using the Windows script:
 
-Bash
+##Bash
 
 python windows_wifi_scanner.py
 Important: For the script to function correctly, run your command prompt or PowerShell as an Administrator.
 
-Contributing
-Contributions, issues, and feature requests are welcome! Feel free to check the issues page (if you create one) or open a pull request.
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
